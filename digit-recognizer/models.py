@@ -146,3 +146,9 @@ if __name__ == '__main__':
         X_train=X_train, Y_train=Y_train, X_dev=X_dev, Y_dev=Y_dev,
         mini_batch_size=64, num_epochs=1, model_path='mnist_simple_nn')
     sess.close()
+
+    # Next: attempt to import model into my iPython notebook.
+    # setup Tensorboard.
+    # setup CNN as class.
+    # build layers using Keras.
+    # build Resnet.
