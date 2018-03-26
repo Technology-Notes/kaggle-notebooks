@@ -5,12 +5,19 @@
 ```
 conda create -n glove-experiments python=3.6
 conda install juypter scikit-learn
+conda install -c conda-forge spacy
 ```
 
 ### Activate virtualenv
 
 ```
 source activate glove-experiments
+```
+
+### Prepare language models
+
+```
+python -m spacy download en
 ```
 
 ## GloVe citation
