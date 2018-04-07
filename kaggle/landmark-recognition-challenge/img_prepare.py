@@ -33,7 +33,11 @@ def resize_img(filename, target_size, path, new_path):
     if os.path.exists(dest):
         return
 
-    im = Image.open(os.path.join(path, filename)).convert('RGB')
+    try:
+        im = Image.open(os.path.join(path, filename)).convert('RGB')
+    except (OSError):
+        return
+
     r, c = im.size
     ratio = target_size / min(r, c)
     new_size = (

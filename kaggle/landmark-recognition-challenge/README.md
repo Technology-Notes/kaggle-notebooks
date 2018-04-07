@@ -27,5 +27,5 @@ python img_downloader.py data/train.csv data/train
 Rescale images such that one dimension is 64:
 
 ```
-python img_prepare.py --input-dir=data/train --output-dir=data/tmp --size=64 --val-ratio=0.2
+python img_prepare.py --input-dir=data/train --output-dir=data/prepared --size=340 --val-ratio=0.2 --input-csv=data/train.csv
 ```
